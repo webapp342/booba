@@ -17,13 +17,14 @@ export default function NavigationBar() {
       onChange={(event, newValue) => {
         setValue(newValue);
       }}
+      showLabels
       sx={{
         position: "fixed",
         bottom: 0,
         left: 0,
         right: 0,
+        backgroundColor: "#f5f5f5", // Modern gri arka plan
         boxShadow: "0 -2px 5px rgba(0,0,0,0.2)",
-        backgroundColor: "#f5f5f5", // Modern gri tonu
       }}
     >
       <BottomNavigationAction
@@ -32,8 +33,11 @@ export default function NavigationBar() {
         component={Link}
         href="/"
         sx={{
-          color: value === 0 ? "black" : "#9e9e9e", // Seçili öğe siyah, diğerleri gri
-          "&:hover": { backgroundColor: "transparent" }, // Hover kaldırıldı
+          color: value === 0 ? "black" : "#9e9e9e", // Seçili siyah, diğerleri gri
+          "&:hover": { backgroundColor: "transparent" }, // Hover animasyonunu kaldır
+          "& .Mui-selected": {
+            fontWeight: "bold",
+          },
           transition: "none", // Büyüme animasyonu kaldırıldı
         }}
       />
@@ -45,6 +49,9 @@ export default function NavigationBar() {
         sx={{
           color: value === 1 ? "black" : "#9e9e9e",
           "&:hover": { backgroundColor: "transparent" },
+          "& .Mui-selected": {
+            fontWeight: "bold",
+          },
           transition: "none",
         }}
       />
@@ -56,9 +63,13 @@ export default function NavigationBar() {
         sx={{
           color: value === 2 ? "black" : "#9e9e9e",
           "&:hover": { backgroundColor: "transparent" },
+          "& .Mui-selected": {
+            fontWeight: "bold",
+          },
           transition: "none",
         }}
       />
     </BottomNavigation>
   );
 }
+
