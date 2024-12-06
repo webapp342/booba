@@ -1,3 +1,5 @@
+"use client";
+
 import type { PropsWithChildren } from 'react';
 import type { Metadata } from 'next';
 import { getLocale } from 'next-intl/server';
