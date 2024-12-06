@@ -1,11 +1,7 @@
-:root {
-  --safe-area-inset-bottom: 0;
-}
 
 body {
   background: var(--tg-theme-secondary-bg-color, white);
-  margin-bottom: 0 !important;  /* Alt margin değerini sıfırlama */
-  padding-bottom: 0 !important; /* Alt padding değerini sıfırlama */
+  padding-bottom: env(safe-area-inset-bottom);
 
 }
 
