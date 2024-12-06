@@ -23,7 +23,7 @@ export default function Home() {
             <Cell
               before={
                 <Image
-                  src={tonSvg.src}
+                  src={tonSvg}
                   style={{ backgroundColor: '#007AFF' }}
                 />
               }
@@ -52,7 +52,13 @@ export default function Home() {
               Theme Parameters
             </Cell>
           </Link>
+          <Link href="/demo">
+            <Cell subtitle="Telegram application palette information">
+              Theme Parameters
+            </Cell>
+          </Link>
         </Section>
+        
         <Section header={t('header')} footer={t('footer')}>
           <LocaleSwitcher/>
         </Section>
