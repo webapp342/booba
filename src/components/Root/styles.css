@@ -2,12 +2,11 @@
   position: fixed; /* Tüm ekranı kaplamak için fixed kullanılır */
   top: 0;
   left: 0;
-  bottom: 10;
   width: 100%;
   height: 100%;
   display: flex; /* Ortalamak için */
   align-items: center;
   justify-content: center;
-  background-color: white; /* Arka planı temiz tutmak için */
+  background-color: black; /* Arka planı temiz tutmak için */
   z-index: 9999; /* En üstte görünmesi için */
 }
