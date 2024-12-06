@@ -36,13 +36,7 @@ export default function NavigationBar() {
         href="/"
         sx={{
           color: value === 0 ? "black" : "#9e9e9e", // Selected black, others gray
-          "&:hover": { 
-            backgroundColor: "transparent", 
-            color: "black", // Change label color on hover
-            "& .MuiBottomNavigationAction-label": {
-              color: "black", // Change label color on hover
-            }
-          },
+          
           "& .Mui-selected": {
             fontWeight: "bold",
             color: "black",
@@ -59,13 +53,7 @@ export default function NavigationBar() {
         href="/favorites"
         sx={{
           color: value === 1 ? "black" : "#9e9e9e",
-          "&:hover": { 
-            backgroundColor: "transparent", 
-            color: "black", // Change label color on hover
-            "& .MuiBottomNavigationAction-label": {
-              color: "black", // Change label color on hover
-            }
-          },
+         
           "& .Mui-selected": {
             fontWeight: "bold",
             color: "black",
@@ -81,13 +69,7 @@ export default function NavigationBar() {
         href="/profile"
         sx={{
           color: value === 2 ? "black" : "#9e9e9e",
-          "&:hover": { 
-            backgroundColor: "transparent", 
-            color: "black", // Change label color on hover
-            "& .MuiBottomNavigationAction-label": {
-              color: "black", // Change label color on hover
-            }
-          },
+         
           "& .Mui-selected": {
             fontWeight: "bold",
             color: "black",
