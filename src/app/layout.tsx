@@ -19,8 +19,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
 
   return (
     <html lang={locale}>
-    <body>
-      <I18nProvider>
+      <body style={{ paddingBottom: 0 }}>      <I18nProvider>
         <Root>
           {children}
         </Root>
