@@ -4,6 +4,8 @@
 
 body {
   background: var(--tg-theme-secondary-bg-color, white);
+  margin-bottom: 0 !important;  /* Alt margin değerini sıfırlama */
+  padding-bottom: 0 !important; /* Alt padding değerini sıfırlama */
 
 }
 
