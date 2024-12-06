@@ -1,14 +1,19 @@
 "use client";
 
 import React, { useState } from "react";
+import HomeIcon from '@mui/icons-material/Home';
+import PersonIcon from '@mui/icons-material/Person';
+import ChatIcon from '@mui/icons-material/Chat';
+import CameraIcon from '@mui/icons-material/Camera';
+import SettingsIcon from '@mui/icons-material/Settings';
 
 const Navigation: React.FC = () => {
   const Menus = [
-    { name: "Home", icon: "home-outline", dis: "translate-x-0" },
-    { name: "Profile", icon: "person-outline", dis: "translate-x-16" },
-    { name: "Message", icon: "chatbubble-outline", dis: "translate-x-32" },
-    { name: "Photos", icon: "camera-outline", dis: "translate-x-48" },
-    { name: "Settings", icon: "settings-outline", dis: "translate-x-64" },
+    { name: "Home", icon: <HomeIcon />, dis: "translate-x-0" },
+    { name: "Profile", icon: <PersonIcon />, dis: "translate-x-16" },
+    { name: "Message", icon: <ChatIcon />, dis: "translate-x-32" },
+    { name: "Photos", icon: <CameraIcon />, dis: "translate-x-48" },
+    { name: "Settings", icon: <SettingsIcon />, dis: "translate-x-64" },
   ];
 
   const [active, setActive] = useState<number>(0);
@@ -33,7 +38,7 @@ const Navigation: React.FC = () => {
                   i === active && "-mt-6 text-white"
                 }`}
               >
-                <ion-icon name={menu.icon}></ion-icon>
+                {menu.icon}
               </span>
               <span
                 className={`${
