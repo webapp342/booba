@@ -45,6 +45,9 @@ export default function NavigationBar() {
           },
           "& .Mui-selected": {
             fontWeight: "bold",
+            color: "black",
+            
+         
           },
           transition: "none", // Remove grow animation
         }}
@@ -65,6 +68,8 @@ export default function NavigationBar() {
           },
           "& .Mui-selected": {
             fontWeight: "bold",
+            color: "black",
+
           },
           transition: "none",
         }}
