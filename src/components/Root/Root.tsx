@@ -37,7 +37,6 @@ function RootInner({ children }: PropsWithChildren) {
     init(debug);
   });
 
-  const isDark = useSignal(miniApp.isDark);
   const initDataUser = useSignal(initData.user);
 
   // Set the user locale.
@@ -46,9 +45,9 @@ function RootInner({ children }: PropsWithChildren) {
   }, [initDataUser]);
 
   return (
-    <TonConnectUIProvider manifestUrl="/tonconnect-manifest.json">
+    <TonConnectUIProvider manifestUrl="https://booba-lime.vercel.app/tonconnect-manifest.json">
       <AppRoot
-        appearance={isDark ? 'dark' : 'light'}
+        appearance="light" // Always use light theme
         platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}
       >
         {children}
