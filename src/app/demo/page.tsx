@@ -1,11 +1,14 @@
 'use client';
 
 import '@telegram-apps/telegram-ui/dist/styles.css'; 
+import { Page } from '@/components/Page';
+
 
 import { AppRoot, Placeholder } from '@telegram-apps/telegram-ui';
 
 const Demo = () => (
     <AppRoot>
+         <Page back={true}>
       <Placeholder
         header="Title"
         description="Description"
@@ -16,6 +19,7 @@ const Demo = () => (
           style={{ display: 'block', width: '144px', height: '144px' }}
         />
       </Placeholder>
+      </Page>
     </AppRoot>
   );
   
