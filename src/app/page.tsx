@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 
 import { Link } from '@/components/Link/Link';
 import { LocaleSwitcher } from '@/components/LocaleSwitcher/LocaleSwitcher';
-import { BottomNav } from '../components/BottomNavigation/BottomNavigation';
+import  Navigation  from '../components/BottomNavigation/BottomNavigation';
 
 import { Page } from '@/components/Page';
 import tonSvg from './_assets/ton.svg';
@@ -64,7 +64,7 @@ export default function Home() {
           <LocaleSwitcher/>
         </Section>
       </List>
-      <BottomNav/>
+      <Navigation/>
 
     </Page>
   );
