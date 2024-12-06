@@ -1,5 +1,7 @@
 "use client";
 
+"use client";
+
 import * as React from "react";
 import Link from "next/link";
 import BottomNavigation from "@mui/material/BottomNavigation";
@@ -23,32 +25,44 @@ export default function NavigationBar() {
         bottom: 0,
         left: 0,
         right: 0,
-        backgroundColor: "#f5f5f5", // Modern gri arka plan
+        backgroundColor: "#f5f5f5", // Modern gray background
         boxShadow: "0 -2px 5px rgba(0,0,0,0.2)",
       }}
     >
       <BottomNavigationAction
         label="Home"
-        icon={<HomeIcon />}
+        icon={<HomeIcon sx={{ color: value === 0 ? "black" : "#9e9e9e" }} />}
         component={Link}
         href="/"
         sx={{
-          color: value === 0 ? "black" : "#9e9e9e", // Seçili siyah, diğerleri gri
-          "&:hover": { backgroundColor: "transparent" }, // Hover animasyonunu kaldır
+          color: value === 0 ? "black" : "#9e9e9e", // Selected black, others gray
+          "&:hover": { 
+            backgroundColor: "transparent", 
+            color: "black", // Change label color on hover
+            "& .MuiBottomNavigationAction-label": {
+              color: "black", // Change label color on hover
+            }
+          },
           "& .Mui-selected": {
             fontWeight: "bold",
           },
-          transition: "none", // Büyüme animasyonu kaldırıldı
+          transition: "none", // Remove grow animation
         }}
       />
       <BottomNavigationAction
         label="Favorites"
-        icon={<FavoriteIcon />}
+        icon={<FavoriteIcon sx={{ color: value === 1 ? "black" : "#9e9e9e" }} />}
         component={Link}
         href="/favorites"
         sx={{
           color: value === 1 ? "black" : "#9e9e9e",
-          "&:hover": { backgroundColor: "transparent" },
+          "&:hover": { 
+            backgroundColor: "transparent", 
+            color: "black", // Change label color on hover
+            "& .MuiBottomNavigationAction-label": {
+              color: "black", // Change label color on hover
+            }
+          },
           "& .Mui-selected": {
             fontWeight: "bold",
           },
@@ -57,12 +71,18 @@ export default function NavigationBar() {
       />
       <BottomNavigationAction
         label="Profile"
-        icon={<PersonIcon />}
+        icon={<PersonIcon sx={{ color: value === 2 ? "black" : "#9e9e9e" }} />}
         component={Link}
         href="/profile"
         sx={{
           color: value === 2 ? "black" : "#9e9e9e",
-          "&:hover": { backgroundColor: "transparent" },
+          "&:hover": { 
+            backgroundColor: "transparent", 
+            color: "black", // Change label color on hover
+            "& .MuiBottomNavigationAction-label": {
+              color: "black", // Change label color on hover
+            }
+          },
           "& .Mui-selected": {
             fontWeight: "bold",
           },
@@ -72,4 +92,3 @@ export default function NavigationBar() {
     </BottomNavigation>
   );
 }
-
