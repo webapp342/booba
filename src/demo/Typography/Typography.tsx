@@ -1,6 +1,5 @@
 import { AllHTMLAttributes, ElementType, forwardRef } from 'react';
 import styles from './Typography.module.css';
-
 import { classNames } from '../helpers/classNames';
 
 const stylesWeight = {
@@ -26,14 +25,14 @@ export interface TypographyProps extends AllHTMLAttributes<HTMLElement> {
  * to facilitate consistent text styling across your application, with support for customization
  * through props. The component is highly reusable and adaptable to various design needs.
  */
-export const Typography = forwardRef(({
+const Typography = forwardRef<HTMLSpanElement, TypographyProps>(({
   weight = '3',
   Component = 'span',
   plain = true,
   caps,
   className,
   ...restProps
-}: TypographyProps, ref) => (
+}, ref) => (
   <Component
     ref={ref}
     className={classNames(
@@ -46,3 +45,8 @@ export const Typography = forwardRef(({
     {...restProps}
   />
 ));
+
+// Set the display name for the component
+Typography.displayName = 'Typography';
+
+export default Typography;
