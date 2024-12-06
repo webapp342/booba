@@ -7,6 +7,6 @@
   display: flex; /* Ortalamak için */
   align-items: center;
   justify-content: center;
-  background-color: black; /* Arka planı temiz tutmak için */
+  background-color: white; /* Arka planı temiz tutmak için */
   z-index: 9999; /* En üstte görünmesi için */
 }
