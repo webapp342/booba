@@ -1,6 +1,6 @@
 'use client';
 
-import { Section, Cell, Image, List } from '@telegram-apps/telegram-ui';
+import { Section, Cell, Image, List} from '@telegram-apps/telegram-ui';
 import { useTranslations } from 'next-intl';
 
 import { Link } from '@/components/Link/Link';
@@ -33,6 +33,7 @@ export default function Home() {
             </Cell>
           </Link>
         </Section>
+        
         <Section
           header="Application Launch Data"
           footer="These pages help developer to learn more about current launch information"
