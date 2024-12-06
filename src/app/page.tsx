@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl';
 
 import { Link } from '@/components/Link/Link';
 import { LocaleSwitcher } from '@/components/LocaleSwitcher/LocaleSwitcher';
-import  Navigation  from '../components/BottomNavigation/BottomNavigation';
 
 import { Page } from '@/components/Page';
 import tonSvg from './_assets/ton.svg';
@@ -53,18 +52,19 @@ export default function Home() {
               Theme Parameters
             </Cell>
           </Link>
-          <Link href="/demo">
+          <Link href="/BottomNavigation">
             <Cell subtitle="Telegram application palette information">
               Demo
             </Cell>
           </Link>
+
         </Section>
         
         <Section header={t('header')} footer={t('footer')}>
           <LocaleSwitcher/>
         </Section>
       </List>
-      <Navigation/>
+     
 
     </Page>
   );

@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from "react";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
