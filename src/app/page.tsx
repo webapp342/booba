@@ -52,7 +52,7 @@ export default function Home() {
               Theme Parameters
             </Cell>
           </Link>
-          <Link href="/BottomNavigation">
+          <Link href="/bottom-navigation">
             <Cell subtitle="Telegram application palette information">
               Demo
             </Cell>
