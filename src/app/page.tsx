@@ -54,7 +54,7 @@ export default function Home() {
           </Link>
           <Link href="/demo">
             <Cell subtitle="Telegram application palette information">
-              Theme Parameters
+              Demo
             </Cell>
           </Link>
         </Section>

@@ -19,7 +19,7 @@ function getUserRows(user: User): DisplayDataRow[] {
     { title: 'first_name', value: user.firstName },
     { title: 'is_bot', value: user.isBot },
     { title: 'is_premium', value: user.isPremium },
-    { title: 'language_code', value: user.languageCode },
+    { title: 'language_code', value: user.languageCode },                 
     { title: 'allows_to_write_to_pm', value: user.allowsWriteToPm },
     { title: 'added_to_attachment_menu', value: user.addedToAttachmentMenu },
   ];

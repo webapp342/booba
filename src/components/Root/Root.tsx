@@ -12,9 +12,9 @@ import { AppRoot } from '@telegram-apps/telegram-ui';
 
 import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { ErrorPage } from '@/components/ErrorPage';
-import { useTelegramMock } from '@/hooks/useTelegramMock';
-import { useDidMount } from '@/hooks/useDidMount';
-import { useClientOnce } from '@/hooks/useClientOnce';
+import { useTelegramMock } from '@/demo/hooks/useTelegramMock';
+import { useDidMount } from '@/demo/hooks/useDidMount';
+import { useClientOnce } from '@/demo/hooks/useClientOnce';
 import { setLocale } from '@/core/i18n/locale';
 import { init } from '@/core/init';
 
@@ -64,7 +64,7 @@ export function Root(props: PropsWithChildren) {
 
   return didMount ? (
     <ErrorBoundary fallback={ErrorPage}>
-      <RootInner {...props}/>
+      <RootInner {...props} />
     </ErrorBoundary>
   ) : <div className="root__loading">Loading</div>;
 }

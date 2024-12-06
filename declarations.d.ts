@@ -1,5 +1,16 @@
+declare module '*.module.css' {
+  const classes: { readonly [key: string]: string };
+  export default classes;
+}
+
 declare module '*.svg' {
-    const content: string;
-    export default content;
-  }
-  
+  import { FunctionComponent, SVGProps } from 'react';
+
+  export const ReactComponent: FunctionComponent<SVGProps<SVGSVGElement> & { title?: string }>;
+
+  const src: string;
+  export default src;
+}
+
+// Yeni Eklenen Modül Tanımları
+declare module '@floating-ui/react-dom';
