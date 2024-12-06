@@ -48,6 +48,7 @@ function RootInner({ children }: PropsWithChildren) {
     <TonConnectUIProvider manifestUrl="https://booba-lime.vercel.app/tonconnect-manifest.json">
       <AppRoot
         appearance="light" // Always use light theme
+      
         platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}
       >
         {children}
