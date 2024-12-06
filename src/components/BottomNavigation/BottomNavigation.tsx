@@ -33,7 +33,7 @@ export default function NavigationBar() {
         label="Home"
         icon={<HomeIcon sx={{ color: value === 0 ? "black" : "#9e9e9e" }} />}
         component={Link}
-        href="/"
+        href="/init-data"
         sx={{
           color: value === 0 ? "black" : "#9e9e9e", // Selected black, others gray
           
@@ -50,12 +50,12 @@ export default function NavigationBar() {
         label="Favorites"
         icon={<FavoriteIcon sx={{ color: value === 1 ? "black" : "#9e9e9e" }} />}
         component={Link}
-        href="/favorites"
+        href="/theme-params"
         sx={{
           color: value === 1 ? "black" : "#9e9e9e",
          
           "& .Mui-selected": {
-            fontWeight: "bold",
+            fontWeight: "bold", 
             color: "black",
 
           },
@@ -66,7 +66,7 @@ export default function NavigationBar() {
         label="Profile"
         icon={<PersonIcon sx={{ color: value === 2 ? "black" : "#9e9e9e" }} />}
         component={Link}
-        href="/profile"
+        href="/ton-connect"
         sx={{
           color: value === 2 ? "black" : "#9e9e9e",
          
