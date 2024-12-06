@@ -1,3 +1,15 @@
-body {
+
+
+html, body {
+  height: 100%;
   background: var(--tg-theme-secondary-bg-color, white);
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  min-height: calc(100vh - 56px); /* BottomNavigation yüksekliği çıkar */
+  padding-bottom: 56px;
 }
