@@ -76,6 +76,21 @@ export default function NavigationBar() {
           transition: "none",
         }}
       />
+       <BottomNavigationAction
+        label="Profile"
+        icon={<PersonIcon sx={{ color: value === 2 ? "black" : "#9e9e9e" }} />}
+        component={Link}
+        href="/ton-connect"
+        sx={{
+          color: value === 2 ? "black" : "#9e9e9e",
+         
+          "& .Mui-selected": {
+            fontWeight: "bold",
+            color: "black",
+          },
+          transition: "none",
+        }}
+      />
     </BottomNavigation>
   );
 }
