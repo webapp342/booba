@@ -1,14 +1,9 @@
 :root {
-  --safe-area-inset-bottom: calc(100vh - var(--tg-viewport-stable-height, 100vh))
+  --safe-area-inset-bottom: 0;
 }
+
 body {
   background: var(--tg-theme-secondary-bg-color, white);
-  padding-bottom: 0 !important; /* Alt boşluğu sıfırlama */
 
-}
-
-/* Eğer güvenli alan özelliği stillerinde kullanılıyorsa */
-.tgui-6a12827a138e8827 {
-  --tgui--safe_area_inset_bottom: 0 !important; /* Alt güvenli alanı sıfırlama */
 }
 
