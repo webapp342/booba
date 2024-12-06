@@ -1,7 +1,6 @@
 import type { PropsWithChildren } from 'react';
 import type { Metadata } from 'next';
 import { getLocale } from 'next-intl/server';
-import  BottomNavigation  from './bottom-navigation/page';
 
 import { Root } from '@/components/Root/Root';
 import { I18nProvider } from '@/core/i18n/provider';
@@ -26,7 +25,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
           {children}
         </Root>
         
-        <BottomNavigation/>
+      
 
       </I18nProvider>
     </body>
