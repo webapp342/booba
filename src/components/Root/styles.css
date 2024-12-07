@@ -9,10 +9,5 @@
   justify-content: center;
   background-color: white; /* Arka planı temiz tutmak için */
   z-index: 9999; /* En üstte görünmesi için */
-  padding-bottom: env(safe-area-inset-bottom);
 }
 
-/* global.css */
-.tgui-6a12827a138e8827 {
-  --tgui--safe_area_inset_bottom: 0 !important;
-}
