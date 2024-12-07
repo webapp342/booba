@@ -3,13 +3,18 @@
 
 body {
   background: var(--tg-theme-secondary-bg-color, white);
+  padding-bottom: var(--tgui--safe_area_inset_bottom);
 
-  margin: 0;
-  padding: 0;
-  --safe-area-inset-top: 0;
-  --safe-area-inset-bottom: 0;
-  --safe-area-inset-left: 0;
-  --safe-area-inset-right: 0;
+ 
 }
 
-
+.tgui-01790b7e59088ea5,
+.tgui-5dc6ad1ca3ac3ed4 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: var(--tgui--safe_area_inset_bottom);
+    background-color: #fff;
+    z-index: 1000;
+}
