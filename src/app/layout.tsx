@@ -1,3 +1,6 @@
+'use client';
+
+
 import { useEffect } from 'react';
 import type { PropsWithChildren } from 'react';
 import type { Metadata } from 'next';
