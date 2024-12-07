@@ -21,7 +21,7 @@ export default async function RootLayout({ children }: PropsWithChildren) {
     <html lang={locale}>
     <body>
       <I18nProvider>
-        <Root>
+        <Root >
           {children}
         </Root>
         
