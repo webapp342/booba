@@ -1,46 +1,11 @@
-/* Telegram temasına dayalı arka plan rengi */
-:root {
-  --tg-theme-secondary-bg-color: black !important;  /* Safe area padding ve tema arka planı */
-  --tgui--safe_area_inset_bottom: 0 !important;  /* Safe area padding'i sıfırlama */
-}
+/* styles.css veya global.css dosyanıza ekleyin */
+@import '~telegram-ui/styles'; /* Telegram UI'nin stil dosyasını içeri aktarıyoruz */
 
-body {
-  background: var(--tg-theme-secondary-bg-color, white);
-  margin: 0;
-  padding: 0;  /* Body etiketindeki padding'i sıfırlıyoruz */
-  overflow-x: hidden;  /* Yatay kaydırmayı engelle */
-  height: 100%;
-  width: 100%;
-}
-
-/* Safe-area-inset-bottom sıfırlama */
-@supports (padding-top: constant(safe-area-inset-bottom)) {
-  .tgui-01790b7e59088ea5,
-  .tgui-5dc6ad1ca3ac3ed4 {
-    --tgui--safe_area_inset_bottom: constant(safe-area-inset-bottom) !important;
-    padding-bottom: 0 !important;  /* Padding bottom'u sıfırlıyoruz */
-    bottom: 0 !important;  /* Bottom'u sıfırlıyoruz */
-  }
-}
-
-@supports (padding-top: env(safe-area-inset-bottom)) {
-  .tgui-01790b7e59088ea5,
-  .tgui-5dc6ad1ca3ac3ed4 {
-    --tgui--safe_area_inset_bottom: env(safe-area-inset-bottom) !important;
-    padding-bottom: 0 !important;  /* Padding bottom'u sıfırlıyoruz */
-    bottom: 0 !important;  /* Bottom'u sıfırlıyoruz */
-  }
-}
-
-/* Diğer gerekli global stiller */
-html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
-}
-
-* {
-  box-sizing: border-box;
+  --safe-area-inset-top: 0;
+  --safe-area-inset-bottom: 0;
+  --safe-area-inset-left: 0;
+  --safe-area-inset-right: 0;
 }
