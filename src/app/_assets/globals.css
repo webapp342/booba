@@ -1,5 +1,5 @@
 /* styles.css veya global.css dosyanıza ekleyin */
-@import '~telegram-ui/styles'; /* Telegram UI'nin stil dosyasını içeri aktarıyoruz */
+@import '@telegram-apps/telegram-ui/dist/styles.css';
 
 body {
   margin: 0;
