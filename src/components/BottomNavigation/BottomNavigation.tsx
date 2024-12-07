@@ -1,6 +1,3 @@
-"use client";
-
-
 import * as React from "react";
 import Link from "next/link";
 import BottomNavigation from "@mui/material/BottomNavigation";
@@ -26,6 +23,7 @@ export default function NavigationBar() {
         right: 0,
         backgroundColor: "#f5f5f5", // Modern gray background
         boxShadow: "0 -2px 5px rgba(0,0,0,0.2)",
+        paddingBottom: "10px", // Add padding to the bottom here
       }}
     >
       <BottomNavigationAction
@@ -35,12 +33,9 @@ export default function NavigationBar() {
         href="/init-data"
         sx={{
           color: value === 0 ? "black" : "#9e9e9e", // Selected black, others gray
-          
           "& .Mui-selected": {
             fontWeight: "bold",
             color: "black",
-            
-         
           },
           transition: "none", // Remove grow animation
         }}
@@ -52,11 +47,9 @@ export default function NavigationBar() {
         href="/theme-params"
         sx={{
           color: value === 1 ? "black" : "#9e9e9e",
-         
           "& .Mui-selected": {
             fontWeight: "bold", 
             color: "black",
-
           },
           transition: "none",
         }}
@@ -68,7 +61,6 @@ export default function NavigationBar() {
         href="/ton-connect"
         sx={{
           color: value === 2 ? "black" : "#9e9e9e",
-         
           "& .Mui-selected": {
             fontWeight: "bold",
             color: "black",
@@ -76,14 +68,13 @@ export default function NavigationBar() {
           transition: "none",
         }}
       />
-       <BottomNavigationAction
+      <BottomNavigationAction
         label="Profile"
         icon={<PersonIcon sx={{ color: value === 2 ? "black" : "#9e9e9e" }} />}
         component={Link}
         href="/ton-connect"
         sx={{
           color: value === 2 ? "black" : "#9e9e9e",
-         
           "& .Mui-selected": {
             fontWeight: "bold",
             color: "black",
