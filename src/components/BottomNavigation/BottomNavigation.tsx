@@ -21,7 +21,7 @@ export default function NavigationBar() {
         bottom: 0,
         left: 0,
         right: 0,
-        backgroundColor: "#f5f5f5", // Modern gray background
+        backgroundColor: "white", // Modern gray background
         boxShadow: "0 -2px 5px rgba(0,0,0,0.2)",
         paddingBottom: "10px", // Add padding to the bottom here
       }}
