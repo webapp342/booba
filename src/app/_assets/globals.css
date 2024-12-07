@@ -1,9 +1,4 @@
 
-
 body {
   background: var(--tg-theme-secondary-bg-color, white);
-  padding-bottom: var(--tgui--safe_area_inset_bottom, 12 );
-
- 
 }
-
