@@ -1,9 +1,8 @@
-/* styles.css veya global.css dosyanıza ekleyin */
-@import '@telegram-apps/telegram-ui/dist/styles.css';
+
 
 body {
   background: var(--tg-theme-secondary-bg-color, white);
-  padding-bottom: var(--tgui--safe_area_inset_bottom);
+  padding-bottom: var(--tgui--safe_area_inset_bottom );
 
  
 }
@@ -15,6 +14,6 @@ body {
     left: 0;
     right: 0;
     padding-bottom: var(--tgui--safe_area_inset_bottom);
-    background-color: #fff;
+    background-color: black;
     z-index: 1000;
 }
