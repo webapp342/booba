@@ -6,6 +6,11 @@
 
 body {
   background: var(--tg-theme-secondary-bg-color, white);
+  margin: 0;
+  padding: 0;  /* Body etiketindeki padding'i sıfırlıyoruz */
+  overflow-x: hidden;  /* Yatay kaydırmayı engelle */
+  height: 100%;
+  width: 100%;
 }
 
 /* Safe-area-inset-bottom sıfırlama */
