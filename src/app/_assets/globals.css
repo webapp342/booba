@@ -2,6 +2,8 @@
 @import '@telegram-apps/telegram-ui/dist/styles.css';
 
 body {
+  background: var(--tg-theme-secondary-bg-color, white);
+
   margin: 0;
   padding: 0;
   --safe-area-inset-top: 0;
@@ -9,3 +11,5 @@ body {
   --safe-area-inset-left: 0;
   --safe-area-inset-right: 0;
 }
+
+
