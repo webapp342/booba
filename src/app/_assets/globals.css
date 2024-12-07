@@ -1,8 +1,7 @@
-body {
-  background: var(--tg-theme-secondary-bg-color, white);
+:root {
+  --tg-theme-secondary-bg-color: black !important;
 }
 
-/* global.css */
-.tgui-6a12827a138e8827 {
-  --tgui--safe_area_inset_bottom: 0 !important;
+body {
+  background: var(--tg-theme-secondary-bg-color, white);
 }
